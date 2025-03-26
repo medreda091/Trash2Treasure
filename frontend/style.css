@@ -1,0 +1,229 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2980b9;
+    padding: 20px 40px;
+}
+
+nav .logo img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section de l'accueil */
+header {
+    background-color: #ecf0f1;
+    padding: 100px 20px 50px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/* Annonces */
+#annonces {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#annonces h2 {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+#annonces-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.annonce-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.annonce-item h3 {
+    color: #2980b9;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.annonce-item p {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+.annonce-item .prix {
+    font-weight: bold;
+    color: #27ae60;
+    margin-top: 10px;
+}
+
+/* Formulaires */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3498db;
+}
+
+/* Footer */
+footer {
+    background-color: #2980b9;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Page d'inscription et de connexion */
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.form-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-box h2 {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #annonces-list {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-box {
+        padding: 20px;
+        margin: 0 20px;
+    }
+}

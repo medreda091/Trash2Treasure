@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash2Treasure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <div class="logo">
+            <img src="https://via.placeholder.com/150x50?text=Logo" alt="Trash2Treasure Logo">
+        </div>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/annonces">Annonces</a></li>
+            <li><a href="/connexion">Connexion</a></li>
+            <li><a href="/inscription">Inscription</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section d'introduction -->
+    <header>
+        <h1>Bienvenue sur Trash2Treasure</h1>
+        <p>Le site où vous pouvez échanger, acheter et vendre des objets pour une vie plus durable.</p>
+    </header>
+
+    <!-- Formulaire d'annonces -->
+    <section id="create-annonce">
+        <h2>Créer une Annonce</h2>
+        <form id="form-annonce">
+            <input type="text" id="titre" placeholder="Titre de l'annonce" required>
+            <textarea id="description" placeholder="Description" required></textarea>
+            <input type="number" id="prix" placeholder="Prix" required>
+            <button type="submit">Créer l'annonce</button>
+        </form>
+    </section>
+
+    <!-- Annonces récentes -->
+    <section id="annonces">
+        <h2>Nos dernières annonces</h2>
+        <div id="annonces-list">
+            <!-- Annonces seront injectées ici par JS -->
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 Trash2Treasure - Tous droits réservés</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
